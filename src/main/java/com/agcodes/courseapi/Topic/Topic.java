@@ -1,7 +1,11 @@
 package com.agcodes.courseapi.Topic;
 
-public class Topic {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Topic {
+    @Id
     private long id;
     private String name;
     private String description;

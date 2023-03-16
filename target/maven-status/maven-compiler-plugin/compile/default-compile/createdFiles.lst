@@ -1,0 +1,9 @@
+com\agcodes\courseapi\Topic\Topic.class
+com\agcodes\courseapi\Course\CourseRepository.class
+com\agcodes\courseapi\Topic\TopicController.class
+com\agcodes\courseapi\Course\Course.class
+com\agcodes\courseapi\Topic\TopicService.class
+com\agcodes\courseapi\CourseApi.class
+com\agcodes\courseapi\Course\CourseService.class
+com\agcodes\courseapi\Topic\TopicRepository.class
+com\agcodes\courseapi\Course\CourseController.class
