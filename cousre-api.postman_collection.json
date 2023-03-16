@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "951a121f-caf4-4e60-8a8b-83cb331ef6ea",
+		"name": "cousre-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3442617"
+	},
+	"item": [
+		{
+			"name": "Topics",
+			"item": [
+				{
+					"name": "Add topic",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n      \"id\": 4,\r\n      \"name\": \"UI/UX Design\",\r\n      \"description\": \"HTML + CSS Basics\"\r\n  }\r\n  \r\n "
+						},
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics/",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/topics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/topics/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics/1",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update topic",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n      \"id\": 2,\r\n      \"name\": \"UI/UX updated!\",\r\n      \"description\": \"HTML + CSS Basics\"\r\n  }\r\n  \r\n "
+						},
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics/2",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete topic",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics/1",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "Add Course",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n      \"id\": 1,\r\n      \"name\": \"Course 1\",\r\n      \"description\": \"Course 1\"\r\n    \r\n  }\r\n  \r\n "
+						},
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics/1/courses",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics",
+								"1",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "courseId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "topicId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics/1/courses",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics",
+								"1",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Course",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n      \"id\": 1,\r\n      \"name\": \"Course updated\",\r\n      \"description\": \"Course updated\"\r\n  }\r\n  \r\n "
+						},
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/topics/1/courses/1",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"topics",
+								"1",
+								"courses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Actuator",
+			"item": [
+				{
+					"name": "Actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{Host}}:{{Port}}/actuator/",
+							"protocol": "http",
+							"host": [
+								"{{Host}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"actuator",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
