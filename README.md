@@ -43,8 +43,8 @@ It's found in the web server &rarr; responsible for running servlet files [writt
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.1</version>
-        <relativePath/>    </parent>``` 
-<br />
-2- ``` <dependencies> ``` &rarr; Jars <br />
-3- ``` <properties> ``` &rarr; Java (JDK) version <br />
+        <relativePath/>    </parent> 
+        ```
+2- ``` <dependencies> ``` &rarr; Jars 
+3- ``` <properties> ``` &rarr; Java (JDK) version
 
