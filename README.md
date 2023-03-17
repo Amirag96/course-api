@@ -38,13 +38,10 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 2- Dependencies version Management (Compatible versions)  <br />
 
 #### • POM: <br />
-1- our project will be the child of the spring boot starter project
+1- our project will be the child of the spring boot starter project <br>
   ``` <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.1</version>
-        <relativePath/>    </parent> 
-        ```
-2- ``` <dependencies> ``` &rarr; Jars 
-3- ``` <properties> ``` &rarr; Java (JDK) version
-
+        <relativePath/>    
+        </parent> ```
