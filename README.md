@@ -39,13 +39,15 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 
 #### • POM: <br />
 1- our project will be the child of the spring boot starter project <br>
- ```xml
-<parent>
+
+```xml
+<<parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.1</version>
         </parent> 
- .```
+>
+.```
 
 
 2- ``` <dependencies> ``` &rarr; Jars 
