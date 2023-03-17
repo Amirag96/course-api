@@ -3,7 +3,7 @@ Just finished this playlist by JavaBrains and decided to make this repo to provi
 [Spring Boot Quick Start] (https://www.youtube.com/playlist?list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x) </br>
 
 
-#### - what is spring Boot? <br/>
+#### • what is spring Boot? <br/>
 Framework that makes it easy to: <br/>
 1- Create standalone apps (Embedded tomcat) <br/>
 2- production grade spring based apps <br/>
@@ -23,12 +23,29 @@ Framework that makes it easy to: <br/>
 | Developers have to define dependencies manually in the pom.xml file.	        | pom.xml file internally handles the required dependencies.|
 
 
-#### - Spring Problems: <br/>
+#### • Spring Problems: <br/>
 1- Huge framework <br/>
 2- Multiple setup steps and a lot of configs <br/>
 3- Multiple build & deploy steps <br/>
 
 
-#### - Servlet container?? <br />
-User  &rarr; Web Server &rarr; Servlet Container &rarr; servlet &rarr; JVM [Machine] <br />
-It's found in the web server > responsible for running servlet files [written in java which needs a container to communicate with the machine's JVM] <br />
+#### • Servlet container?? <br />
+It's found in the web server &rarr; responsible for running servlet files [written in java which needs a container to communicate with the machine's JVM] <br />
+``` User  &rarr; Web Server &rarr; Servlet Container &rarr; servlet &rarr; JVM [Machine] ``` <br />
+
+#### • Maven ? <br />
+1- ```Declaring``` all the dependencies in 1 file ```[pom.xml]``` &rarr; No need to install/ import Jars <br />
+2- Dependencies version Management (Compatible versions)  <br />
+
+#### • POM: <br />
+1- our project will be the child of the spring boot starter project
+  ``` <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    ``` <br />
+2- ``` <dependencies> ``` &rarr; Jars <br />
+3- ``` <properties> ``` &rarr; Java (JDK) version <br />
+
