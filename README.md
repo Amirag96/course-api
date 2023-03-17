@@ -45,7 +45,7 @@ It's found in the web server &rarr; responsible for running servlet files [writt
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.1</version>
-        </parent>
+</parent>
 ```
 
 
