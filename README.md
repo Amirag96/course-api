@@ -44,8 +44,7 @@ It's found in the web server &rarr; responsible for running servlet files [writt
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.1</version>
         <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    ``` <br />
+    </parent>``` <br />
 2- ``` <dependencies> ``` &rarr; Jars <br />
 3- ``` <properties> ``` &rarr; Java (JDK) version <br />
 
