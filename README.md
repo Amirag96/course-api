@@ -49,7 +49,7 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 ```
 
 
-2- ``` <dependencies> ``` &rarr; Jars 
-3- ``` <properties> ``` &rarr; Java (JDK) version
+2- ``` <dependencies> ``` &rarr; Jars  <br />
+3- ``` <properties> ``` &rarr; Java (JDK) version <br />
 
 
