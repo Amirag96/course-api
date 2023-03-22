@@ -67,6 +67,8 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 7- ``` @Table ``` &rarr; specifies the name of the database table to be used for mapping  <br />
 8- ``` @Id ``` &rarr; specifies the primary key of an entity <br />
 9- ``` @GeneratedValue ``` &rarr; for generation strategies for the values of primary keys <br />
+10- ``` @Transient ``` &rarr; the framework will ignore mapping this attribute as it isn't a field to be mapped to a database column / It'll be calculated 
+Age or ConfirmPassword ... etc <br />
 
 ##### Lombok annotations: <br />
 • Entity:  <br />
