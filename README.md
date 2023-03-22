@@ -75,6 +75,8 @@ Age or ConfirmPassword ... etc <br />
   ``` @RequestMapping(method = RequestMethod.GET, value = "/{topicId}/courses") ``` 
 13- ``` @PathVariable ```  <br /> 
 14- ``` @RequestBody ```   <br />
+15- ``` @Value``` &rarr;  assign default values to variables using spring Env variables &rarr; ``` @Value("${CONFIG_VAL:Default}")``` <br />
+```@Value("#{systemProperties['java.home']}")```  &rarr; using SpEl (spring expression language that supports querying and manipulating an object at runtime) <br />
   
 
 ##### Lombok annotations: <br />
