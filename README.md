@@ -80,5 +80,6 @@ Article a = Article.builder()
 ``` 
 <br />
 • Logging with Lombok: <br />
-```@Log``` or ```@Log4j2``` or <br />
+```@Log``` <br />
+```@Log4j2``` <br />
 ```@Slf4j``` (recommended) <br />
