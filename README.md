@@ -70,6 +70,13 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 10- ``` @Transient ``` &rarr; the framework will ignore mapping this attribute as it isn't a field to be mapped to a database column / It'll be calculated 
 Age or ConfirmPassword ... etc <br />
 
+11- ``` @ManyToOne ``` + ```@JoinColumn(name = "column_id") ``` <br />
+12- ``` @RequestMapping("app/v1/") ``` <br />
+  ``` @RequestMapping(method = RequestMethod.GET, value = "/{topicId}/courses") ``` 
+13- ``` @PathVariable ```  <br /> 
+14- ``` @RequestBody ```   <br />
+  
+
 ##### Lombok annotations: <br />
 • Entity:  <br />
 ``` @Getter``` & ``` @Setter ``` & ``` @ToString ``` <br />
