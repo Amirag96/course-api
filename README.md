@@ -53,3 +53,28 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 3- ``` <properties> ``` &rarr; Java (JDK) version <br />
 
 
+
+
+#### • Spring Annotations: <br />
+
+1- ``` @Controller ``` &rarr; it marks a class as a web request handler <br />
+2- ``` @RestController ``` &rarr; combination of @Controller and @ResponseBody annotations so it eliminates the need for them. <br />
+3- ``` @Component ``` &rarr; allows Spring to automatically detect our custom classes/beans <br />
+4- ``` @Service ``` &rarr; to indicate that they're holding the business logic <br />
+5- ``` @Repository ``` &rarr; is a DAOs (Data Access Object) that access the database directly & does all the operations related to the database.<br />
+@Service and @Repository are special cases of @Component. They are technically the same, but we use them for the different purposes.  <br />
+
+6- Lombok annotations:
+• Entity:  <br />
+``` @Getter``` & ``` @Setter ``` & ``` @ToString ``` <br />
+``` @Data ``` is a convenient shortcut annotation that bundles the features of @ToString, @EqualsAndHashCode, @Getter / @Setter and @RequiredArgsConstructor together.<br />
+``` @NoArgsConstructor ```&rarr;  (Empty constructor generation) <br />
+ ``` @Builder ```&rarr;   we can create instances of the class using builder API <br />
+Example:
+```
+Article a = Article.builder()
+  .id(1L)
+  .title("Test Article")
+  .tags(Collections.singletonList("Demo"))
+  .build();
+```
