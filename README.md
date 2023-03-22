@@ -64,7 +64,7 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 5- ``` @Repository ``` &rarr; is a DAOs (Data Access Object) that access the database directly & does all the operations related to the database.<br />
 @Service and @Repository are special cases of @Component. They are technically the same, but we use them for the different purposes.  <br />
 
-6- Lombok annotations:
+6- Lombok annotations: <br />
 • Entity:  <br />
 ``` @Getter``` & ``` @Setter ``` & ``` @ToString ``` <br />
 ``` @Data ``` is a convenient shortcut annotation that bundles the features of @ToString, @EqualsAndHashCode, @Getter / @Setter and @RequiredArgsConstructor together.<br />
