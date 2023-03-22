@@ -77,4 +77,6 @@ Article a = Article.builder()
   .title("Test Article")
   .tags(Collections.singletonList("Demo"))
   .build();
-```
+``` <br />
+• Logging with Lombok: <br />
+``` @Log ``` or ``` @Log4j2 ``` or ``` @Slf4j ```  (recommended)
