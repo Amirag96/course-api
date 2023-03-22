@@ -63,6 +63,10 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 4- ``` @Service ``` &rarr; to indicate that they're holding the business logic <br />
 5- ``` @Repository ``` &rarr; is a DAOs (Data Access Object) that access the database directly & does all the operations related to the database.<br />
 @Service and @Repository are special cases of @Component. They are technically the same, but we use them for the different purposes.  <br />
+6- ``` @Entity ``` &rarr; specifies that the class is an entity and is mapped to a database table <br />
+7- ``` @Table ``` &rarr; specifies the name of the database table to be used for mapping  <br />
+8- ``` @Id ``` &rarr; specifies the primary key of an entity <br />
+9- ``` @GeneratedValue ``` &rarr; for generation strategies for the values of primary keys <br />
 
 6- Lombok annotations: <br />
 • Entity:  <br />
