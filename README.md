@@ -68,7 +68,7 @@ It's found in the web server &rarr; responsible for running servlet files [writt
 8- ``` @Id ``` &rarr; specifies the primary key of an entity <br />
 9- ``` @GeneratedValue ``` &rarr; for generation strategies for the values of primary keys <br />
 
-6- Lombok annotations: <br />
+##### Lombok annotations: <br />
 • Entity:  <br />
 ``` @Getter``` & ``` @Setter ``` & ``` @ToString ``` <br />
 ``` @Data ``` is a convenient shortcut annotation that bundles the features of @ToString, @EqualsAndHashCode, @Getter / @Setter and @RequiredArgsConstructor together.<br />
